@@ -1,0 +1,36 @@
+body{
+    background-color: yellow;
+}
+
+
+#container{
+    text-align: center;
+    background-color: #1dc116;
+    font-family: "Comic Sans MS";
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    position: fixed;
+    left: 30%;
+}
+
+#difficultyChoice, #guess_input, #submit{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#guess_input{
+    text-align: center;
+    width: 300px;
+}
+
+#submit{
+    width: 300px;
+    border: none;
+}
+
+#response_div, #statistics{
+    height: 50px;
+}

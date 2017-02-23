@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Guess</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <!-- i know the instructions wanted the js on the html file but i did it separately so it doesn't get too crowded -->
+        <script src="script.js"type=text/javascript></script>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <!-- Correct me if im wrong but we are generating the number onload so that the number doesnt change as long as the don't refresh? -->
+    <body onload="pick_number()">
+        <div id="container">
+            <div>
+                <h1>Guess a number from 1 - 10</h1>
+                <select id="difficultyChoice">
+                    <option selected="selected" disabled="disabled" id="defaultSelect">Select Game Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <form>
+                <input placeholder="Input Number" id="guess_input">
+            </form>
+            <button id="submit">Submit</button>
+            <div id="response_div"></div>
+            <div id="statistics"></div>
+        </div>
+    </body>
+</html>
